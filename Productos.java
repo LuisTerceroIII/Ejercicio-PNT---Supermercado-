@@ -27,6 +27,7 @@ public class Productos {
 			
 			if(productos.get(i).compareTo(productos.get(o)) == 1){ //0>0
 				o++;
+				
 				if(productos.get(i).compareTo(productos.get(o)) == 1){	//0>1
 					o++;
 					if(productos.get(i).compareTo(productos.get(o)) == 1){//0>2
@@ -62,12 +63,14 @@ public class Productos {
 						
 						if(productos.get(i).compareTo(productos.get(o)) == -1){
 							System.out.println("Producto más barato: " + productos.get(i).getNombre());
+							loop = false;
 					
 						}
 					}
 				}
-			}if(i == 4){loop = false;}
-		}i= i+1;
+			}
+			i= i+1;
+		}
 		
 	}
 	

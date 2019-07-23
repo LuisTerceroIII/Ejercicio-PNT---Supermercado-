@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** *************************************************************************
-* Clase Producto, modela productos de un "supermercado de barrio",
+* Clase Producto, modela y crea productos de un "supermercado de barrio",
 * ademas gracias al metodo compareTo() de la interfaz Comparable
 * se comparan los precios para determinar el producto mas caro y el mas barato.
 *
