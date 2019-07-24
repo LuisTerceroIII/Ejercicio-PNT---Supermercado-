@@ -1,8 +1,15 @@
 
 import java.util.ArrayList;
-//import java.util.Iterator;
 import java.util.List;
 
+/*******************************************************************************************************************************
+   La clase Productos se encarga de crear y guardar objetos de tipo Producto en un arrayList para su facil acceso y modificacion.
+   Ademas de proveer metodos para mostrar por consola: 1ro La lista de productos en mostrarPorConsola(),
+  2do El producto mas caro en imprimirMasCaro() y, 3ro El prudcto mas barato en imprimirMasBarato().
+
+  @Author Luis Espinoza
+
+  *******************************************************************************************************************************/
 public class Productos {
 	
 	List<Producto> productos = new ArrayList<>(4);
@@ -25,14 +32,14 @@ public class Productos {
 		boolean loop = true;
 		while(loop){ 
 			
-			if(productos.get(i).compareTo(productos.get(o)) == 1){ //0>0
+			if(productos.get(i).compareTo(productos.get(o)) == 1){ 
 				o++;
 				
-				if(productos.get(i).compareTo(productos.get(o)) == 1){	//0>1
+				if(productos.get(i).compareTo(productos.get(o)) == 1){	
 					o++;
-					if(productos.get(i).compareTo(productos.get(o)) == 1){//0>2
+					if(productos.get(i).compareTo(productos.get(o)) == 1){
 						
-						if(productos.get(i).compareTo(productos.get(o)) == 1){//0>3
+						if(productos.get(i).compareTo(productos.get(o)) == 1){
 							
 							System.out.println("Producto más caro: " + productos.get(i).getNombre());
 					

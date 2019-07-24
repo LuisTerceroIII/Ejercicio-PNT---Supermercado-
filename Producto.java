@@ -1,7 +1,4 @@
 
-import java.util.ArrayList;
-import java.util.List;
-
 /** *************************************************************************
 * Clase Producto, modela y crea productos de un "supermercado de barrio",
 * ademas gracias al metodo compareTo() de la interfaz Comparable
@@ -93,6 +90,7 @@ public class Producto implements Comparable<Producto>{
 		case 64:
 			paraImprimir = this.getConKilo();
 			break;
+			
 		default: System.out.println("Producto no encontrado");
 			
  	} return paraImprimir;
