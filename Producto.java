@@ -57,16 +57,6 @@ public class Producto implements Comparable<Producto>{
     public String getUnidadDeVenta(){
     	return unidad_De_Venta;
     }
-
-	public String getConContenido(){
-		return "Nombre: " + getNombre() + " /// " + "Contenido: " + getContenido() + "ml" + " /// " + "Precio: $"+ getPrecio();
-	}
-	public String getConLitro(){
-		return "Nombre: " + getNombre() + " /// " + "Litros: " + getLitros() + " /// " + "Precio: $"+ getPrecio();
-	}
-	public String getConKilo(){
-		return "Nombre: " + getNombre() + " /// " + "Precio: $" + getPrecio() + " /// " + "Unidad de venta: "+ getUnidadDeVenta();
-	}
 	
 	public static void separador(){
  		System.out.println("============================="); 
