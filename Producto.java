@@ -74,28 +74,21 @@ public class Producto implements Comparable<Producto>{
 	
  	@Override
  	public String toString(){
- 		
- 		String paraImprimir = null;
- 		
-		switch(this.precio){
-		case 18:
-			paraImprimir = this.getConLitro();
-			break;
-		case 19:
-			paraImprimir = this.getConContenido();
-			break;
-		case 20:
-			paraImprimir = this.getConLitro();
-			break;
-		case 64:
-			paraImprimir = this.getConKilo();
-			break;
+ 			
+ 		String paraImprimir = "Nombre: " + this.getNombre();
+ 		if(this.getLitros() != 0.0f){
+ 		paraImprimir = paraImprimir + " /// " + "Litros: " + this.getLitros() + " /// " + "Precio: $" + this.getPrecio(); 
+ 		}if(this.getContenido() != 0){
+ 			paraImprimir = paraImprimir + " /// " + "Contenido: " + this.getContenido() + "ml" + " /// " + "Precio: $" + this.getPrecio();
+ 		}if(this.getUnidadDeVenta() != null){
+ 			paraImprimir = paraImprimir + " /// " + "Precio: $" + this.getPrecio() + " /// " + "Unidad de Venta: " + this.getUnidadDeVenta();
+ 		}
 			
-		default: System.out.println("Producto no encontrado");
-			
- 	} return paraImprimir;
+ 	 return paraImprimir;
+ 	 }
+ 		
 		
- }
+ 
  	
 	public int compareTo(Producto p){
 		
@@ -110,4 +103,5 @@ public class Producto implements Comparable<Producto>{
 		}
 		return resultado;
 	}
+
 }
