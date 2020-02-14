@@ -30,23 +30,19 @@ public class Productos {
 		int i = 0;
 		int o = 0;
 		boolean loop = true;
-		while(loop){ 
-			
+		while(loop){
 			if(productos.get(i).compareTo(productos.get(o)) == 1){ 
 				o++;
-				
 				if(productos.get(i).compareTo(productos.get(o)) == 1){	
 					o++;
-					if(productos.get(i).compareTo(productos.get(o)) == 1){
-						
+					if(productos.get(i).compareTo(productos.get(o)) == 1){	
 						if(productos.get(i).compareTo(productos.get(o)) == 1){
-							
-							System.out.println("Producto m·s caro: " + productos.get(i).getNombre());
-					
+							System.out.println("Producto m√°s caro: " + productos.get(i).getNombre());
 						}
 					}
 				}
-			}if( i == 3){
+			}
+			if( i == 3){
 				loop = false;
 			}	
 			i = i + 1;
@@ -60,16 +56,13 @@ public class Productos {
 		int o = 0;
 		boolean loop = true;
 		while(loop){ 
-			
 			if(productos.get(i).compareTo(productos.get(o)) == -1){
 				o++;
-				
 				if(productos.get(i).compareTo(productos.get(o)) == -1){
 					o++;
-					if(productos.get(i).compareTo(productos.get(o)) == -1){
-						
+					if(productos.get(i).compareTo(productos.get(o)) == -1){	
 						if(productos.get(i).compareTo(productos.get(o)) == -1){
-							System.out.println("Producto m·s barato: " + productos.get(i).getNombre());
+							System.out.println("Producto m√°s barato: " + productos.get(i).getNombre());
 							loop = false;
 					
 						}
@@ -80,7 +73,4 @@ public class Productos {
 		}
 		
 	}
-	
-	
-	
 }
